@@ -14,9 +14,12 @@ The following is a diagram shows how configuration files, returned from past oce
 - a list of new/modified controlled vocabulary terms to be submitted to the NVS governance process so that the pertinent vocabularies served by NVS can be updated for use by the larger oceanographic community
 [[file://inst_vocab_wflow.png]]
 
-* Description of R2R Eventlogger application related files
-The followig CSV files are included in the R2R Edist software distribution. This software distribution includes the R2R Evenlogger application in addition to the environment (auxillary files, etc.) required to run it.
-** <cruise-id>/
-** <cruise-id>/
-* 
+* Step-by-step algorithm
 
+** initialize
+
+
+** loop on <cruiseid>
+*** identify <logbook_dir> and <config_file> for a cruise
+*** loop through <instrument> in <config_file>
+**** ignore <instrument> if already in instrument vocabulary>
